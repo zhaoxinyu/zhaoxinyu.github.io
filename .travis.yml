@@ -1,5 +1,21 @@
+---
+branches:
+  only:
+  - source
 language: ruby
 rvm:
-  - 2.0.0
-  - 1.9.3
-script: bundle exec rake install; bundle exec rake generate
+- 1.9.3
+before_script:
+- git config --global user.name "zhaoxinyu"
+- git config --global user.email "zhaoxinyu512@gmail.com"
+- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+- bundle exec rake setup_github_pages[$REPO_URL]
+script:
+- set LANG=zh_CN.UTF-8
+- bundle exec rake generate
+after_script:
+- bundle exec rake deploy
+env:
+  global:
+  - GH_REPO="zhaoxinyu/zhaoxinyu.github.io"
+  - secure: "ZqCApzOgljUJ1z94T0wDGj384nLpTYaCqcI+zzfgbQ5sNjM/UWA1E3i2XKt66K1FTjujJc0apaLeVhLKxPZuPykJfYbRf1iVCYfw7hg0s16eg4xdKFYw4lqadu9q9LnR0TWbo/4qepXX2YlXqqI9x3euMjnL5pFgatDp5ZRQA+c="
