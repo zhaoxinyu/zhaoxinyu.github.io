@@ -4,21 +4,21 @@
   <title><![CDATA[David's Tech Blog]]></title>
   <link href="http://zhaoxinyu.github.io/atom.xml" rel="self"/>
   <link href="http://zhaoxinyu.github.io/"/>
-  <updated>2014-08-17T23:45:41+08:00</updated>
+  <updated>2014-08-18T09:32:17+08:00</updated>
   <id>http://zhaoxinyu.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[David Park]]></name>
     <email><![CDATA[zhaoxinyu@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[第一篇博客]]></title>
-    <link href="http://zhaoxinyu.github.io/blog/2014/08/17/di-%5B%3F%5D-pian-bo-ke/"/>
-    <updated>2014-08-17T23:43:28+08:00</updated>
-    <id>http://zhaoxinyu.github.io/blog/2014/08/17/di-[?]-pian-bo-ke</id>
-    <content type="html"><![CDATA[<p>我的github blog开通了</p>
+    <title type="html"><![CDATA[My First Blog]]></title>
+    <link href="http://zhaoxinyu.github.io/blog/2014/08/18/my-first-blog/"/>
+    <updated>2014-08-18T09:23:37+08:00</updated>
+    <id>http://zhaoxinyu.github.io/blog/2014/08/18/my-first-blog</id>
+    <content type="html"><![CDATA[<p>Welcome to David&rsquo;s Tech blog.</p>
 ]]></content>
   </entry>
   
