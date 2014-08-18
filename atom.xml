@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[David's Tech Blog]]></title>
+  <link href="http://www.geekzhao.com/atom.xml" rel="self"/>
+  <link href="http://www.geekzhao.com/"/>
+  <updated>2014-08-18T03:37:29+00:00</updated>
+  <id>http://www.geekzhao.com/</id>
+  <author>
+    <name><![CDATA[David Park]]></name>
+    <email><![CDATA[zhaoxinyu@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[My First Blog]]></title>
+    <link href="http://www.geekzhao.com/blog/2014/08/18/my-first-blog/"/>
+    <updated>2014-08-18T01:23:37+00:00</updated>
+    <id>http://www.geekzhao.com/blog/2014/08/18/my-first-blog</id>
+    <content type="html"><![CDATA[<p>Welcome to David&rsquo;s Tech blog.</p>
+]]></content>
+  </entry>
+  
+</feed>
