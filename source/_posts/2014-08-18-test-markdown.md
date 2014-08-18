@@ -25,8 +25,6 @@ Simple inline link <http://cheluois.com>,another inline link[Smaller](http://sma
 A ![Resize icon][2]reference style image.
 [2]:http://resizesafari.com/favicon.ico "Title"
 ####Codes
-`pulic a(){
-	int a=10;
-    for(int i=0; i < a;i++){
-    	System.io.print(a+" ");
-}`
+	public test(){
+    	printf("Hello");
+    }
