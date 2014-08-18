@@ -105,12 +105,3 @@ console.log letter for letter in alphabet[4..8]
 如果你想要语法高亮(对[特定语言](http://pygments.org/docs/lexers/))，指定文件名(有后缀名)即可：
 	{% gist 4321346 gistfile1.diff %}
 {% gist 4321346 gistfile1.diff %}
-
-
-
-
-
-
-
-
-
