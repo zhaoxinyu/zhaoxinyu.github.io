@@ -4,7 +4,7 @@
   <title><![CDATA[David's Tech Blog]]></title>
   <link href="http://zhaoxinyu.github.io/atom.xml" rel="self"/>
   <link href="http://zhaoxinyu.github.io/"/>
-  <updated>2014-08-18T12:05:00+08:00</updated>
+  <updated>2014-08-18T22:29:55+08:00</updated>
   <id>http://zhaoxinyu.github.io/</id>
   <author>
     <name><![CDATA[David Park]]></name>
@@ -19,6 +19,162 @@
     <updated>2014-08-18T09:23:37+08:00</updated>
     <id>http://zhaoxinyu.github.io/blog/2014/08/18/my-first-blog</id>
     <content type="html"><![CDATA[<p>Welcome to David&rsquo;s Tech blog.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test Markdown]]></title>
+    <link href="http://zhaoxinyu.github.io/blog/2014/08/18/test-markdown/"/>
+    <updated>2014-08-18T00:00:00+08:00</updated>
+    <id>http://zhaoxinyu.github.io/blog/2014/08/18/test-markdown</id>
+    <content type="html"><![CDATA[<h1>分享代码片段</h1>
+
+<p>原文链接<a href="http://octopress.org/docs/blogging/code/">Sharing Code Snippets</a><br/>
+分享代码非常重要,用代码写博客应该是容易而且优美的。这就是为什么Octopress包含一些特性来使你编码快步如飞。尽管Jekyll支持<a href="http://pygments.org/">Pygments语法高亮</a>，Octopress能够使得它更好，如下所示。</p>
+
+<ul>
+<li>专门为Octopress创造了<a href="http://ethanschoonover.com/solarized">Solarized语法高亮</a>的Sass接口。</li>
+<li>嵌入式Gist代码 - by <a href="https://gist.github.com/1027674">Brandon Tilly</a></li>
+<li>简单地用<code>&lt;div class='bogus-wrapper'&gt;&lt;notextile&gt;&lt;figure&gt;</code>和<code>&lt;figcaption&gt;</code>构造代码块和可选的下载链接。</li>
+<li>Pygments缓存 - 一个<a href="https://github.com/rsim/blog.rayapps.com/blob/master/_plugins/pygments_cache_patch.rb">Jekyll社区插件</a>.</li>
+</ul>
+
+
+<p>点击<a href="http://octopress.org/docs/blogging/code/test">测试页面</a>查看结果。</p>
+
+<hr />
+
+<!--more-->
+
+
+<h2>反斜杠代码块</h2>
+
+<p>有了<code>backtick_codeblock</code>过滤器，你可以使用Github可爱的反斜杠语法高亮代码块。你只需要用三个反斜杠开始一行并开始编写代码。</p>
+
+<hr />
+
+<h2>语法</h2>
+
+<pre><code>```[language] [title] [url] [link text] [linenos:false]     [start:#] [mark:#,#-#]
+code snippet
+```
+</code></pre>
+
+<hr />
+
+<h2>基本选项</h2>
+
+<ul>
+<li><code>[language]</code>-用来进行语法高亮。传递&#8217;plain&#8217;参数禁用高亮.(<a href="http://pygments.org/docs/lexers/">支持的语言</a>)</li>
+<li><code>[title]</code>-向你的代码块添加figcaption</li>
+<li><code>[url]</code>下载或指示你的代码引用链接</li>
+<li><code>[Link Test]</code>链接的显示文本，默认为&#8217;link&#8217;</li>
+</ul>
+
+
+<hr />
+
+<h2>附加选项</h2>
+
+<p>下列选项不依赖于之前的选项并且选项的先后顺序无关。
+* <code>start:#</code>-行号以#开始(用代码片段引用长的代码段时有用)。
+* <code>mark:#,#-#</code>-用&#8221;mared&#8221;这个类名来标记一行或多行代码。接受一个数字，用逗号分隔的数字和数字范围。例如<code>mark:1,5-8</code>标记第1,5,6,7,8行。注意：如果你已经改变了起始的行号，请确认这些能够匹配赋予的行号。
+* <code>linenos:false</code>-不要向高亮代码添加行号。</p>
+
+<hr />
+
+<h2>示例</h2>
+
+<p>1.没有设定语言
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ git clone git@github.com:imathis/octopress.git # fork octopress</span></code></pre></td></tr></table></div></figure></notextile></div><br/>
+源码：</p>
+
+<pre><code>```
+$ git clone git@github.com:imathis/octopress.git # fork octopress
+```  
+</code></pre>
+
+<p>2.使用代码高亮和代码链接</p>
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>    <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+源码：</p>
+
+<pre><code>``` ruby Discover if a number is prime http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/ Source Article
+class Fixnum
+def prime?
+    ('1' * self) !~ /^1?$|^(11+?)\1+$/
+end
+end
+```  
+</code></pre>
+
+<p>3.使用自定义起始行号，标记第52行和54-55行。</p>
+
+<figure class='code'><figcaption><span>Coffeescript Tricks start:51 mark:52,54-55</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="c1"># Given an alphabet:</span>
+</span><span class='line'><span class="nv">alphabet = </span><span class="s">&#39;abcdefghijklmnopqrstuvwxyz&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1"># Iterate over part of the alphabet:</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="nx">letter</span> <span class="k">for</span> <span class="nx">letter</span> <span class="k">in</span> <span class="nx">alphabet</span><span class="p">[</span><span class="mi">4</span><span class="p">..</span><span class="mi">8</span><span class="p">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+源码：
+    &#8220;` coffeescript Coffeescript Tricks start:51 mark:52,54-55
+    # Given an alphabet:
+    alphabet = &lsquo;abcdefghijklmnopqrstuvwxyz&rsquo;</p>
+
+<pre><code># Iterate over part of the alphabet:
+console.log letter for letter in alphabet[4..8]
+```
+</code></pre>
+
+<hr />
+
+<h2>其他嵌入代码的方式</h2>
+
+<p>你或许喜欢<a href="http://octopress.org/docs/plugins/include-code">从文件嵌入代码</a>或<a href="http://octopress.org/docs/plugins/gist-tag">嵌入Github gists</a>.</p>
+
+<hr />
+
+<h2>嵌入Gist</h2>
+
+<p>你需要的仅仅是一个gist id然后你就能够在你的页面中嵌入代码。这其实是下载gist的缓存并为了RSS阅读器和搜索引擎将它嵌入到<code>&lt;noscript&gt;</code>标签，与此同时仍然使用Github的javascript gist嵌入代码为浏览器。</p>
+
+<h3>语法</h3>
+
+<pre><code>{ % gist gist_id [filename]%}
+</code></pre>
+
+<h3>示例</h3>
+
+<pre><code>{ % gist 4321346%}
+</code></pre>
+
+<p>{ % gist 4321346%}</p>
+
+<p>如果你想要语法高亮(对<a href="http://pygments.org/docs/lexers/">特定语言</a>)，指定文件名(有后缀名)即可：
+    { % gist 4321346 gistfile1.diff %}
+{ % gist 4321346 gistfile1.diff %}</p>
 ]]></content>
   </entry>
   
